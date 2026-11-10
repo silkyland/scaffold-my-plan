@@ -93,6 +93,8 @@ What it cannot be is absent.
   next. Retrofit never changes behavior: a move commit contains moves only.
 
 Infer the mode from the repo. Say which one you are running in and why.
+Explicit arguments override inference — `new` on a sprawled repo or
+`retrofit` on greenfield is allowed when the user asks for it.
 
 ## Roles
 
@@ -229,7 +231,9 @@ the instructions an agent already reads.
 - **Every row cites a real file that demonstrates it.** The exemplar is what
   a contributor copies; a rule with no exemplar drifts into fiction.
 - **Name the anti-homes** — `utils`, `helpers`, `common`, `misc`, `_v2` — and
-  say what to do instead: name the concept, then place it.
+  say what to do instead: name the concept, then place it. (`utils` survives
+  only as a namespace of per-concept files like `utils/junkDetector.ts`; the
+  anti-home is the unstructured grab-bag.)
 - **Include the vocabulary**, one line per domain noun, so names stay stable.
 - **Give the escape hatch**: what to do when nothing fits. "Propose the module,
   justify it against the vocabulary and the dependency direction, then add a

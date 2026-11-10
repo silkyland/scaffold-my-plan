@@ -48,6 +48,8 @@ Beyond the table, the section answers:
    gets invented silently.
 3. **What are the anti-homes?** `utils`, `helpers`, `common`, `misc`, `_v2`,
    `core` — each with the replacement: "name the concept, then place it".
+   (`utils` survives only as a namespace of per-concept files; the anti-home
+   is the unstructured grab-bag.)
 4. **The vocabulary** — five to ten domain nouns, one line each.
 
 ## What does not belong

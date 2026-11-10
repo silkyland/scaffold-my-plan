@@ -7,7 +7,8 @@ want to; the repo is the record, not a session journal.
 
 In the existing architecture doc, or `docs/ARCHITECTURE.md` if there is none.
 Keep the heading stable — `deep-plan-ingest` merges into this file later and
-looks for the section by name.
+leaves sections it doesn't own untouched, so a stable heading keeps this
+section intact and un-duplicated.
 
 ```markdown
 ## Structure
@@ -56,8 +57,9 @@ which and why — a silent gap is worse than an admitted one.
 `deep-plan-ingest` writes `AGENTS.md`, `docs/ARCHITECTURE.md`, and
 `ROADMAP.md`, merging section-by-section. Two habits keep the handoff clean:
 
-- **Put placement rules under one heading** — "Where code goes" — so ingest
-  updates them instead of duplicating them.
+- **Put placement rules under one heading** — "Where code goes" — ingest
+  leaves sections it doesn't own untouched, so one stable heading keeps this
+  section intact and un-duplicated.
 - **Do not invent a second source of truth.** If the placement table lives in
   `AGENTS.md`, the architecture doc points at it rather than repeating it.
 

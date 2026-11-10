@@ -52,7 +52,7 @@ module.exports = {
     {
       name: "no-deep-imports",
       severity: "error",
-      from: { path: "^src/(?!orders/)", pathNot: "^src/orders/" },
+      from: { path: "^src/(?!orders/)" },
       to: { path: "^src/orders/(?!index\\.ts)" },
     },
   ],
